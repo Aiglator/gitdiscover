@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitDiscovery</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-gray-600 flex items-center justify-center h-screen">
+
+    <header>
+        <section class="absolute top-0 left-0 w-full text-center text-white py-4">
+            <h1 class="text-3xl font-bold">GitDiscovery</h1>
+            <p class="text-lg">A tool for using Git in graphical systems</p>
+        </section>
+    </header>
+
+    <main>
+        <section id="results" class="mt-5 w-80 p-4 rounded-lg text-white">
+            <h2 class="text-xl font-bold mb-2">Résultats :</h2>
+            <ul id="resultsList" class="space-y-2"></ul>
+        </section>
+    </main>
+
+    <footer class="absolute bottom-10">
+        <section class="border border-gray-300 rounded-lg flex justify-center items-center p-4">
+            <form id="searchForm">
+                <input id="searchInput" type="text" placeholder="Entrez votre commande Git..."
+                    class="w-80 px-4 py-2 text-white rounded-md focus:outline-none focus:ring-0 focus:border-blue-500">
+                <button type="submit" class="bg-blue-400 rounded-lg p-2 m-1 text-blue-50 hover:text-blue-200 hover:bg-blue-600">
+                    Exécuter
+                </button>
+            </form>
+        </section>
+    </footer>
+
+    <script src="renderer.js"></script>
+</body>
+</html>
